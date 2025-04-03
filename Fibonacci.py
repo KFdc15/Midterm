@@ -1,4 +1,5 @@
 # Dãy Fibonacci bằng quy hoạch động
+n = int(input("Nhập số n: "))
 def fibonacci(n):
     if n <= 0:
         return 0
@@ -10,3 +11,4 @@ def fibonacci(n):
         for i in range(2, n + 1):
             fib[i] = fib[i - 1] + fib[i - 2]
         return fib[n]
+print("Fibonacci của", n, "là:", fibonacci(n))
